@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,14 +56,7 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Sunday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Sunday"],
         "opens": "09:00",
         "closes": "18:00"
       },
@@ -79,7 +71,8 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -88,494 +81,459 @@
 <body>
 
     <!--================ HEADER ================-->
-
     <header>
-
         <div class="logo">
-
             <img src="assets/logo.jpeg" alt="Dhiraj Food Repacking Logo">
-
             <h2>Dhiraj Food </h2>
-
         </div>
 
-        <nav>
-
+        <nav class="nav-menu" id="nav-menu">
             <ul>
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#products">Products</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#products" class="nav-link">PRODUCTS</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <!--================ HERO ================-->
-    <section class="hero" id="home">
+    <!--================ HERO SLIDER ================-->
+    <section class="hero-slider-section" id="home">
+        <!-- Animated SVG Background Waves -->
+        <div class="hero-bg-waves">
+            <svg viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="wave1" fill="#095530" d="M0,400 C300,600 600,200 1440,400 L1440,800 L0,800 Z"></path>
+                <path class="wave2" fill="#0c6b3e" d="M0,500 C400,300 800,700 1440,500 L1440,800 L0,800 Z"></path>
+                <path class="wave3" fill="#0f8f4f" d="M0,600 C500,800 1000,400 1440,600 L1440,800 L0,800 Z"></path>
+            </svg>
+        </div>
 
-        <div class="overlay"></div>
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="slide-content">
+                    <div class="text-content">
+                        <span class="cursive-tag">Best Quality</span>
+                        <h1>DHIRAJ<br>ALMOND</h1>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/aa.jpeg" alt="Almond">
+                    </div>
+                </div>
+            </div>
 
-        <div class="hero-content">
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="text-content">
+                        <span class="cursive-tag">100% Quality</span>
+                        <h1>DHIRAJ<br>JEERA</h1>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/jjj.jpeg" alt="Jeera">
+                    </div>
+                </div>
+            </div>
 
-            <h1>Authentic Taste.<br>Premium Quality.</h1>
-
-            <p>Trusted Since 2000</p>
-
-            <a href="#products" class="btn">Explore Products</a>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="text-content">
+                        <span class="cursive-tag">Premium Select</span>
+                        <h1>DHIRAJ<br>CASHEW</h1>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/[kajuuuuuuuu.png" alt="Cashew">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="text-content">
+                        <span class="cursive-tag">Authentic Taste</span>
+                        <h1>DHIRAJ<br>PISTA</h1>
+                    </div>
+                    <div class="image-content">
+                        <img src="assets/p.jpeg" alt="Pista">
+                    </div>
+                </div>
+            </div>
 
         </div>
 
+        <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+        </div>
     </section>
 
     <!--================ FEATURES ================-->
-
     <section class="features">
-
         <div class="feature">
-
             <i class="fa-solid fa-award"></i>
-
             <h3>Premium Quality</h3>
-
             <p>Only carefully selected food products.</p>
-
         </div>
-
         <div class="feature">
-
             <i class="fa-solid fa-seedling"></i>
-
             <h3>Fresh Ingredients</h3>
-
             <p>Freshly packed to preserve quality.</p>
-
         </div>
-
         <div class="feature">
-
             <i class="fa-solid fa-box"></i>
-
             <h3>Hygienically Packed</h3>
-
             <p>Safe, clean and modern packaging.</p>
-
         </div>
-
         <div class="feature">
-
             <i class="fa-solid fa-heart"></i>
-
             <h3>Trusted Since 2000</h3>
-
             <p>Serving customers with pride.</p>
-
         </div>
-
     </section>
 
     <!--================ PRODUCTS ================-->
-
     <section class="products" id="products">
-
         <h2>Our Premium Products</h2>
-
         <div class="product-grid">
 
-            <!-- Cashew -->
-
             <div class="card">
-
-                <img src="assets/[kajuuuuuuuu.jpeg" alt="Cashew">
-
-                <h3> Cashew (Kaju)</h3>
-
-
-
-            </div>
-
-            <!-- Ajino Moto -->
-
-            <div class="card">
-
-                <img src="assets/a.jpeg" alt="Ajino Moto">
-
-                <h3> Ajino Moto (MSG)</h3>
-
-
-            </div>
-
-            <!-- Pista -->
-
-            <div class="card">
-
-                <img src="assets/p.jpeg" alt="Pista">
-
-                <h3> Pista</h3>
-
-
-            </div>
-
-            <div class="card">
-
-                <img src="assets/aa.jpeg" alt="Product">
-
-                <h3>Almond</h3>
-
-
-            </div>
-
-
-
-
-            <!-- Mix Nut -->
-            <div class="card">
-
-                <img src="assets/m.jpeg" alt="Mix Nut">
-
-                <h3> Mixnut</h3>
-
-
-            </div>
-
-            <div class="card">
-
-                <img src="assets/ccc.jpeg" alt="Product">
-
-                <h3>Chhohara</h3>
-
-
-
-            </div>
-
-
-
-            <!-- Teel -->
-            <div class="card">
-
-                <img src="assets/t.jpeg" alt="Teel (Sesame Seeds)">
-
-                <h3> Teel (Sesame Seeds)</h3>
-
-
-
-            </div>
-
-            <!-- Dhaniya -->
-            <div class="card">
-
-                <img src="assets/d.jpeg" alt="Dhaniya (Coriander Seeds)">
-
-                <h3>Dhaniya (Coriander Seeds)</h3>
-
-
-
-            </div>
-            <!-- Jeera -->
-            <div class="card">
-
-                <img src="assets/jjj.jpeg" alt="Jeera (Cumin Seeds)">
-
-                <h3> Jeera (Cumin Seeds)</h3>
-
-
-
-            </div>
-
-            <!-- Loung (Cloves) -->
-            <div class="card">
-
-                <img src="assets/l.jpeg" alt="Loung (Cloves)">
-
-                <h3> Loung (Cloves)</h3>
-
-
-            </div>
-
-            <!-- Okhar (Walnut) -->
-            <div class="card">
-
-                <img src="assets/ok.jpeg" alt="Okhar (Walnut)">
-
-                <h3> Okhar (Walnut)</h3>
-
-
-            </div>
-
-            <!-- Methi (Fenugreek Seeds) -->
-            <div class="card">
-
-                <img src="assets/mmmm.jpeg" alt="Methi (Fenugreek Seeds)">
-
-                <h3> Methi (Fenugreek Seeds)</h3>
-
-
-
-            </div>
-
-            <div class="card">
-
-                <img src="assets/ss.jpeg" alt="Product Name">
-
-                <h3>Seed Mixnut </h3>
-
-
-
-            </div>
-
-            <!-- Elaichi (Cardamom) -->
-            <div class="card">
-
-                <img src="assets/hhh.jpeg" alt="Elaichi (Cardamom)">
-
-                <h3> Elaichi (Cardamom)</h3>
-
-
-
-            </div>
-
-            <div class="card">
-
-                <img src="assets/lll4.jpeg" alt="Supari Product">
-
-                <h3> Supari (Betel Nut)</h3>
-
-
-
-            </div>
-
-            <div class="card">
-
-                <img src="assets/a.jpeg" alt="Anjir Product">
-
-                <h3> Anjir</h3>
-
-
-
-            </div>
-
-            <!-- Mishri -->
-
-            <div class="card">
-
-                <img src="assets/m.jpeg" alt="Mishri">
-
-                <h3>Mishri</h3>
-
-
-            </div>
-
-            <div class="card">
-
-                <img src="assets/k.jpeg" alt="Kismish Product">
-
-                <h3>Kismish (Raisin)</h3>
-
-
-            </div>
-        </div> <!-- product-grid -->2
-
-    </section> <!-- products -->
-
-    <section class="about" id="about">
-
-        <div class="about-container">
-
-            <div class="about-left">
-
-                <h3><span class="about-tag">ABOUT US</span></h3>
-
-                <h2>Trusted Since <span>2000</span></h2>
-
-                <p>
-                    <strong>Dhiraj Food </strong>is one of Nepal's trusted importers and distributors of premium dry
-                    fruits, spices, pulses, and food products. Founded in 2000 by <strong>Shree Bhagwan Sah</strong>,
-                    the company has grown from a local business in <strong>Birgunj, Nepal</strong> into a recognized
-                    brand known for quality, trust, and customer satisfaction.
-
-                    We offer 35+ premium products, including <strong>Cashew Nuts, Almonds, Raisins (Kismis), Jeera,
-                        Dhaniya, Mishri, Loung, Sukmel</strong> and a wide range of dry fruits and spices. Every product
-                    is carefully sourced, hygienically packed, and quality-checked to ensure freshness, purity, and
-                    exceptional taste.
-
-                </p>
-
-                <p>
-                    With a strong distribution network, <strong>Dhiraj Food</strong> proudly supplies households,
-                    retailers, wholesalers, and businesses across Nepal. Our commitment to premium quality, hygienic
-                    packaging, and reliable service has made us a trusted name in the Nepali market for over three
-                    decades
-                </p>
-
-            </div>
-
-            <div class="about-right">
-
-                <div class="stat-card">
-                    <h3>25+</h3>
-                    <p>Years Experience</p>
+                <div class="card-img-wrapper">
+                    <img src="assets/[kajuuuuuuuu.jpeg" alt="Cashew">
                 </div>
-
-                <div class="stat-card">
-                    <h3>100%</h3>
-                    <p>Premium Quality</p>
-                </div>
-
-
-                <div class="stat-card">
-                    <h3>35+</h3>
-                    <p>Product</p>
-                </div>
-
-                <div class="stat-card">
-
-                    <h3>30+</h3>
-
-                    <p>Cities in Nepal</p>
-
-                    <img src="https://cdn3.emoji.gg/unicode/apple/flag-for-nepal.png" alt="Nepal Flag"
-                        class="nepal-flag">
-                </div>
-    </section>
-
-
-    <!--================ CONTACT SECTION ================-->
-
-    <section class="contact-section" id="contact">
-
-        <div class="contact-wrapper">
-
-            <!-- Left Side -->
-
-            <div class="contact-details">
-
-                <h2>Get In Touch</h2>
-
-                <p>
-                    We'd love to hear from you. Contact us for product inquiries,
-                    wholesale orders, or business partnerships.
-                </p>
-
-                <div class="contact-item">
-                    <span>📍</span>
-                    <div>
-                        <h4>Address</h4>
-                        <p>Adarshnagar, Birgunj, Nepal</p>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Cashew (Kaju)</h3>
                     </div>
                 </div>
-
-                <div class="contact-item">
-                    <span>📞</span>
-                    <div>
-                        <h4>Phone</h4>
-                        <a href="tel:+9779804264443">+977 9804264443</a>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-
-                    <img src="https://i.ibb.co/jxhPMGX/whatspppp.webp" width="45">
-
-                    <div>
-                        <h4>WhatsApp</h4>
-
-                        <a href="https://wa.me/9779804264443" target="_blank">
-                            Chat on WhatsApp
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-                    <span>✉️</span>
-
-                    <div>
-
-                        <h4>Email</h4>
-
-                        <a href="mailto:dhirajkumar13022@gmail.com">
-                            dhirajkumar13022@gmail.com
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <img src="https://i.ibb.co/8gQcprjZ/gggggggggg.png" width="50">
-
-                    <div>
-
-                        <h4>Google Maps</h4>
-
-                        <a href="https://maps.app.goo.gl/pjtVW3LX62wcEZk98?g_st=ic" target="_blank">
-
-                            Open Location
-
-                        </a>
-
-                    </div>
-
-                </div>
-
             </div>
 
-            <!-- Right Side -->
-
-            <div class="social-media">
-
-                <h2>Follow Us</h2>
-
-                <p>Stay connected with us on social media.</p>
-
-                <a href="https://www.facebook.com/share/14hdJfsSK2d/?mibextid=wwXIfr" target="_blank"
-                    class="social-box">
-
-                    <img src="https://i.ibb.co/PZgSJVKW/FBBBBBB.png" alt="Facebook" width="50" height="50">
-
-                    <div>
-                        <h4>Facebook</h4>
-                        <span>Dhiraj Food </span>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/a.jpeg" alt="Ajino Moto">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Ajino Moto (MSG)</h3>
                     </div>
+                </div>
+            </div>
 
-                </a>
-
-
-                <a href="https://www.instagram.com/dhirajfood_003/" target="_blank" class="social-box">
-
-                    <img src="https://i.ibb.co/8LwRNKFG/instagram.png" alt="Instagram" width="50" height="50">
-
-                    <div>
-                        <h4>Instagram</h4>
-                        <span>@dhirajfood_003</span>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/p.jpeg" alt="Pista">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Pista</h3>
                     </div>
+                </div>
+            </div>
 
-                </a>
-                <a href="https://www.tiktok.com/@dhirajfood003?_r=1&_t=ZS-98HIXhVzoUW" class="social-box"
-                    target="_blank">
-
-                    <img src="https://i.ibb.co/mVwGQNwb/tiktok.jpg" width="50">
-
-                    <div>
-
-                        <h4>TikTok</h4>
-
-                        <span>@dhirajfood003</span>
-
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/aa.jpeg" alt="Almond">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Almond</h3>
                     </div>
+                </div>
+            </div>
 
-                </a>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/m.jpeg" alt="Mixnut">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Mixnut</h3>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/ccc.jpeg" alt="Chhohara">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Chhohara</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/t.jpeg" alt="Teel">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Teel (Sesame Seeds)</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/d.jpeg" alt="Dhaniya">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Dhaniya</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/jjj.jpeg" alt="Jeera">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Jeera</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/l.jpeg" alt="Loung">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Loung (Cloves)</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/ok.jpeg" alt="Okhar">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Okhar (Walnut)</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/mmmm.jpeg" alt="Methi">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Methi (Fenugreek)</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/ss.jpeg" alt="Seed Mixnut">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Seed Mixnut</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/hhh.jpeg" alt="Elaichi">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Elaichi</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/lll4.jpeg" alt="Supari">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Supari</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/a.jpeg" alt="Anjir">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Anjir</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/m.jpeg" alt="Mishri">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Mishri</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="assets/k.jpeg" alt="Kismish">
+                </div>
+                <div class="card-bottom">
+                    <div class="card-title-box">
+                        <h3>Kismish (Raisin)</h3>
+                    </div>
+                </div>
             </div>
 
         </div>
-
     </section>
+
+    <!--================ ABOUT ================-->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-left">
+                <h3><span class="about-tag">ABOUT US</span></h3>
+                <h2>Trusted Since <span>2000</span></h2>
+                <p>
+                    <strong>Dhiraj Food </strong>is one of Nepal's trusted importers and distributors of premium dry fruits, spices, pulses, and food products. Founded in 2000 by <strong>Shree Bhagwan Sah</strong>, the company has grown from a local business in <strong>Birgunj, Nepal</strong> into a recognized brand known for quality, trust, and customer satisfaction.
+                </p>
+                <p>
+                    We offer 35+ premium products, including <strong>Cashew Nuts, Almonds, Raisins (Kismis), Jeera, Dhaniya, Mishri, Loung, Sukmel</strong> and a wide range of dry fruits and spices. Every product is carefully sourced, hygienically packed, and quality-checked to ensure freshness, purity, and exceptional taste.
+                </p>
+                <p>
+                    With a strong distribution network, <strong>Dhiraj Food</strong> proudly supplies households, retailers, wholesalers, and businesses across Nepal. Our commitment to premium quality, hygienic packaging, and reliable service has made us a trusted name in the Nepali market for over three decades
+                </p>
+            </div>
+            
+            <div class="about-right">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Premium Quality</p>
+                    </div>
+                    
+                    <!-- Center Flag -->
+                    <div class="center-logo">
+                        <img src="https://cdn3.emoji.gg/unicode/apple/flag-for-nepal.png" alt="Nepal Flag">
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>35+</h3>
+                        <p>Product</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>30+</h3>
+                        <p>Cities in Nepal</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--================ FOOTER SECTION ================-->
+    <footer id="contact" class="professional-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="assets/logo.jpeg" alt="Dhiraj Food">
+                    <h2>Dhiraj Food</h2>
+                </div>
+                <p class="footer-desc">Premium dry fruits, spices, and food repacking company in Birgunj, Nepal. Serving quality since 2000.</p>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/share/14hdJfsSK2d/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dhirajfood_003/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@dhirajfood003?_r=1&_t=ZS-98HIXhVzoUW" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Adarshnagar, Birgunj, Nepal</li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+9779804264443">+977 9804264443</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/9779804264443" target="_blank">Chat on WhatsApp</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:dhirajkumar13022@gmail.com">dhirajkumar13022@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col map-col">
+                <h3>Find Us</h3>
+                <div class="map-wrapper">
+                    <!-- Google Maps Iframe for Birgunj -->
+                    <iframe src="https://maps.google.com/maps?q=Dhiraj+Food+Repacking,+Birgunj&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dhiraj Food. All Rights Reserved. Designed to perfection.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/9779804264443" target="_blank" class="whatsapp" title="WhatsApp Us">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Slider & Menu Script -->
+    <script>
+        // Hero Slider Logic
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentSlide = 0;
+        const slideInterval = 2500; // 2.5s
+
+        function goToSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let newIndex = currentSlide + 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            goToSlide(newIndex);
+        }
+
+        let sliderTimer = setInterval(nextSlide, slideInterval);
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                clearInterval(sliderTimer);
+                goToSlide(parseInt(this.getAttribute('data-index')));
+                sliderTimer = setInterval(nextSlide, slideInterval);
+            });
+        });
+    </script>
+</body>
+</html>
