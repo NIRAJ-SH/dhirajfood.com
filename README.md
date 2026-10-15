@@ -68,7 +68,7 @@ To run the project locally, you only need a web browser. No complex build tools 
 
 * 📍 **Address**: Adarshnagar, Birgunj, Nepal
 * 📞 **Phone**: [+977 9804264443](tel:+9779804264443)
-* 💬 **WhatsApp**: [Chat on WhatsApp](https://wa.me/9779804264443)
+* 💬 **WhatsApp**: [Chat on WhatsApp](https://wa.me/9779829279192)
 * ✉️ **Email**: [dhirajkumar13022@gmail.com](mailto:dhirajkumar13022@gmail.com)
 
 ## 🌐 Connect With Us
